@@ -4,7 +4,6 @@ PROGRAM ToolboxOfCFDAndNoise
     IMPLICIT NONE
     INTEGER(KIND=8) :: functionFlag
     
-    PAUSE
     
     CALL ReadCaseFile
     CALL AllocateMemory  
@@ -18,6 +17,8 @@ PROGRAM ToolboxOfCFDAndNoise
     WRITE(*,*) "3. Generate Observation Coord Of Radiant Sphere"
     WRITE(*,*)
     WRITE(*,*) "4. Transform To Tail Noise Observation Coord"
+    WRITE(*,*)
+    WRITE(*,*) "5. Generate Tecplot ASCII File According TO SPL File"
     WRITE(*,*)
     WRITE(*,*) "Input The Number And Press Enter:"
     READ(*,*) functionFlag
@@ -38,6 +39,10 @@ PROGRAM ToolboxOfCFDAndNoise
     
     IF (functionFlag == 4) THEN
         CALL TransformToTailNoiseObservationCoord
+    END IF
+    
+    IF (functionFlag == 5) THEN
+        CALL AddTecplotASCIIHeaderToSPLFile
     END IF
      
     CALL DeallocateMemory

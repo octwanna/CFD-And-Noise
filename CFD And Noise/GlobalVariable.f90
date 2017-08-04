@@ -20,5 +20,8 @@ MODULE GlobalVariable
     
     REAL(KIND=8) :: DTR = PI / 180.0
     
-END MODULE
+    END MODULE
     
+!已使用的文件索引：  
+!   95271   95281   95291           95311
+!           95280   95290   95300   95310
