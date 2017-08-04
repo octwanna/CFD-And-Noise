@@ -1,0 +1,60 @@
+CASE FILE:
+
+MU       RE     CFL 真实弦长为0.18m
+0.162    2.79   5.0
+NREV     NCYC     PART    
+4        6        720
+NROTOR   NMB      NTB     NFU     NBK
+1        2        4       0       1  
+GRID_TYPE      IMPLICIT     IFDS 
+0              1            1
+
+MAIN BLADE INFORMATION
+RADIUM     ALF_TPP      MACH
+9.2085       0.         0.663
+TYPE_DYNAMIC
+1
+REVERSE
+0
+FLAP_0     FLAP_1C      FLAP_1S      FLAP_2C      FLAP_2S
+0.5         -1.0           0.           0.           0.
+PITCH_0     PITCH_1C     PITCH_1S      PITCH_1C     PITCH_1S
+5.03        1.98           -2.04           0.           0.
+DL     DH     DS
+0.     0.     0.
+IDIM     JDIM     KDIM     ISTA     IEND     KSTA     KEND     IVISC     ACOU
+201      41       111      21       181      10        91       1         0
+201      41       111      21       181      10        91       1         0
+
+TAIL BLADE INFORMATION
+REVERSE
+0
+RADIUM     ALF_TPP     MACH     
+1.8417       0.          0.663 
+DL         DH     DS
+12.5     0.     0.
+FLAP     PITCH
+0.0      8.0
+IDIM     JDIM     KDIM     ISTA     IEND     KSTA     KEND     IVISC     ACOU
+211      45       94       26       186      12       66       1         0
+211      45       94       26       186      12       66       1         0
+211      45       94       26       186      12       66       1         0
+211      45       94       26       186      12       66       1         0
+
+FUSELAGE INFORMATION
+GRIDTYPE     ETYPE
+0            6 
+DL     DH     DS
+0.     0.     0.
+YAW     PITCH
+0.      0.
+IDIM     JDIM     KDIM     ISTA     IEND     KSTA     KEND     IVISC     ACOU
+
+BACKGROUND INFORMATION
+IDIM     JDIM     KDIM     ISTA     IEND     KSTA     KEND     IVISC     ACOU
+267      191      215      0        0        0        0        0         0
+
+SCISSOR ROTOR INFORMATION
+SCISSOR     ANGLE     DISTANCE
+0           90.       0.
+
